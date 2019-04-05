@@ -3,7 +3,7 @@ FROM node:latest
 EXPOSE 5432 4321 35729
 
 RUN npm -i -g npm && \
-	npm i -g gulp yo @microsoft/generator-sharepoint --unsafe-perm && \
+	npm i -g gulp yo @microsoft/generator-sharepoint && \
 	npm cache clean
 
 VOLUME /usr/app/spfx
